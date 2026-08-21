@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CyberFolio Admin</title><link rel="stylesheet" href="/style.css">
+</head>
+<body class="admin-page">
+<header class="topbar"><a class="brand" href="/">&lt;/&gt; CYBER<span>FOLIO</span></a><div class="top-actions"><a class="admin-link" href="/">Portfolio</a><button class="icon-btn" id="adminTheme">☼</button></div></header>
+<main class="admin-main">
+  <section id="loginPanel" class="admin-card login-card">
+    <p class="eyebrow">PRIVATE CONTROL PANEL</p><h1>Admin Login</h1><p class="muted">Only you should use this dashboard.</p>
+    <form id="loginForm" class="form"><label>Username<input name="username" required></label><label>Password<input type="password" name="password" required></label><button class="btn primary">Login</button><p id="loginStatus" class="form-status"></p></form>
+  </section>
+  <section id="dashboard" hidden>
+    <div class="admin-head"><div><p class="eyebrow">CLIENT REQUESTS</p><h1>Project Inbox</h1></div><button class="btn ghost" id="logout">Logout</button></div>
+    <div class="admin-stats"><div><b id="total">0</b><span>Total</span></div><div><b id="newCount">0</b><span>New</span></div><div><b id="working">0</b><span>Working</span></div><div><b id="done">0</b><span>Completed</span></div></div>
+    <div id="requests" class="requests"></div>
+  </section>
+</main>
+<script src="/admin.js"></script>
+</body>
+</html>

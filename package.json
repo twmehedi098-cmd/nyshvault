@@ -1,0 +1,19 @@
+{
+  "name": "cyberfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cyber hacker x professional web designer portfolio with client request dashboard.",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "cookie": "^1.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.18.0"
+  },
+  "devDependencies": {
+    "vercel": "^48.0.0"
+  }
+}
